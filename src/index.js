@@ -93,6 +93,7 @@ export class Map extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+    console.log('updateing!!!!!!!!!!!!!!!!!')
     if (prevProps.google !== this.props.google) {
       this.loadMap();
     }
